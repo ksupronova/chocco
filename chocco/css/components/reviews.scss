@@ -1,0 +1,72 @@
+
+.reviews__display{
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 83px;
+    height: 83px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -61px;
+  }
+}
+
+
+.reviews__display-inner {
+  background: #F8FAF9;
+  display: flex;
+  margin-bottom: 15px;
+  padding: 42px 42px;
+  position: relative;
+
+  &::after {
+    content: url(../../img/decor/leaves-berries.png);
+    position: absolute;
+    right: 0;
+    top: 22px;
+  }
+}
+
+.reviews__avatar {
+  width: 254px;
+  height: 264px;
+}
+
+.reviews__avatar-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.reviews__content {
+  flex: 1;
+  margin-left: 38px;
+}
+
+.reviews__title {
+  font-weight: bold;
+  font-size: 27px;
+  color: #292929;
+  margin-bottom: 12px;
+}
+
+.reviews__text {
+  margin-bottom: 25px;
+  padding-right: 22%;
+}
+
+.reviews__author {
+  color: #292929;
+  font-weight: 500;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,19 @@
+.order-section {
+  background: url(../../img/decor/bcgr.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+  
+  &::before{
+    content: url(../../img/decor/blackberry.png);
+    right: 0;
+    top: -170px;
+    position: absolute;
+  }
+
+  &::after {
+    content: url(../../img/decor/leaf4.png);
+    right: 0;
+    bottom: 58px;
+    position: absolute;
+  }
+}

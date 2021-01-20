@@ -1,0 +1,584 @@
+@import "layout/normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Alegreya Sans", sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  color: #666666;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 50px 0;
+  background: url("../../img/decor/chocolates.png") right center/46% auto no-repeat;
+}
+
+.hero {
+  background: url(../../img/decor/big-leaf.png) right bottom no-repeat;
+  background-color: #61C4D9;
+  height: 100vh;
+  min-height: 652px;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 100px;
+}
+.hero::before {
+  content: url(../../img/decor/leaf3.png);
+  position: absolute;
+  bottom: -40px;
+  left: 12%;
+}
+.hero::after {
+  content: url(../../img/decor/comp.png);
+  position: absolute;
+  bottom: -55px;
+  right: 136px;
+}
+
+.hero__title-section {
+  width: 44%;
+}
+
+.hero__main-title {
+  font-weight: bold;
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 58px;
+  margin-bottom: 17px;
+}
+
+.hero__title-desc {
+  font-size: 21px;
+  padding-right: 37%;
+  margin-bottom: 32px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 27px;
+}
+.menu__item:last-child {
+  margin-right: 42px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.phone-number {
+  font-size: 22px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.phone-number__icon {
+  width: 14px;
+  height: 14px;
+}
+
+.features {
+  display: flex;
+}
+
+.features__item {
+  margin-right: 46px;
+}
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.feature {
+  display: flex;
+  max-width: 114px;
+}
+
+.feature__icon {
+  width: 100px;
+  margin-right: 12px;
+}
+
+.feature__text {
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 800;
+  padding: 21px 41px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+}
+.btn--theme--white {
+  background-color: #fff;
+  color: #497870;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #497870;
+}
+.btn--theme--green {
+  background-color: #497870;
+  color: #fff;
+}
+.btn:hover {
+  color: #497870;
+  background-color: #fff;
+}
+.btn--theme--transparent {
+  background-color: transparent;
+  color: #497870;
+  text-transform: none;
+  font-weight: 400;
+}
+.btn:hover {
+  color: #497870;
+  background-color: #fff;
+}
+
+.section {
+  height: 100wh;
+  min-height: 652px;
+  display: flex;
+  justify-content: center;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #000;
+}
+
+.headline {
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 19px;
+}
+
+.headline__subtitle {
+  padding: 0 27%;
+  margin-bottom: 49px;
+}
+
+.benefits {
+  display: flex;
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.benefits__item::before {
+  position: absolute;
+  top: 54px;
+  right: -59px;
+  transform: translateX(-50%);
+  content: url(../../img/decor/separator.png);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child::before {
+  display: none;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+
+.benefit__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 68px;
+  width: 64px;
+}
+
+.benefit__title {
+  font-weight: bold;
+  font-size: 27px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.benefits-section {
+  position: relative;
+  background: url(../../img/decor/side-leaf.png) left top 23% no-repeat;
+}
+.benefits-section::before {
+  content: url(../../img/decor/bars.png);
+  position: absolute;
+  left: 0;
+  top: 367px;
+}
+
+.reviews__display {
+  overflow: hidden;
+  position: relative;
+}
+.reviews__display::before {
+  content: "";
+  display: block;
+  width: 83px;
+  height: 83px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -61px;
+}
+
+.reviews__display-inner {
+  background: #F8FAF9;
+  display: flex;
+  margin-bottom: 15px;
+  padding: 42px 42px;
+  position: relative;
+}
+.reviews__display-inner::after {
+  content: url(../../img/decor/leaves-berries.png);
+  position: absolute;
+  right: 0;
+  top: 22px;
+}
+
+.reviews__avatar {
+  width: 254px;
+  height: 264px;
+}
+
+.reviews__avatar-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.reviews__content {
+  flex: 1;
+  margin-left: 38px;
+}
+
+.reviews__title {
+  font-weight: bold;
+  font-size: 27px;
+  color: #292929;
+  margin-bottom: 12px;
+}
+
+.reviews__text {
+  margin-bottom: 25px;
+  padding-right: 22%;
+}
+
+.reviews__author {
+  color: #292929;
+  font-weight: 500;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-section {
+  position: relative;
+  background: url(../../img/decor/side-leaf2.png) left top 130% no-repeat;
+}
+.reviews-section::before {
+  content: url(../../img/decor/strawberry.png);
+  position: absolute;
+  right: 148px;
+  top: -22px;
+}
+.reviews-section::after {
+  content: url(../../img/decor/berries.png);
+  left: 0;
+  bottom: -32px;
+  position: absolute;
+}
+
+.reviews-section__title {
+  margin-bottom: 30px;
+}
+
+.interactive-avatar {
+  width: 74px;
+  height: 74px;
+  border: 4px solid transparent;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.interactive-avatar--active {
+  border-color: #365A49;
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order__title {
+  color: #497870;
+  padding-top: 62px;
+}
+
+.order-section {
+  background: url(../../img/decor/bcgr.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.order-section::before {
+  content: url(../../img/decor/blackberry.png);
+  right: 0;
+  top: -170px;
+  position: absolute;
+}
+.order-section::after {
+  content: url(../../img/decor/leaf4.png);
+  right: 0;
+  bottom: 58px;
+  position: absolute;
+}
+
+.form {
+  display: flex;
+  -webkit-user-select: none;
+          user-select: none;
+  color: #497870;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 27px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 15px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  height: 58px;
+  padding: 18px 12px;
+  border: 3px solid transparent;
+}
+.form__input:focus {
+  border-color: #DEE2BD;
+  outline: none;
+}
+
+.form__input--textarea {
+  height: 152px;
+  resize: none;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__btns {
+  margin-top: 50px;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  margin-right: 23px;
+  margin-bottom: 19px;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox .radio__visible::before {
+  background: url(../../img/icons/tick.png) center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.radio__visible::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #365A49;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 13px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #ffffff;
+}
+
+.fixed-menu__link {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

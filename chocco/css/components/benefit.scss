@@ -1,0 +1,31 @@
+.benefit {
+  text-align: center;
+}
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+
+.benefit__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 68px;
+  width: 64px;
+}
+
+.benefit__title {
+  font-weight: bold;
+  font-size: 27px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
